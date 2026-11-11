@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Environment secrets - never commit real credentials
+.env
+.env.local
+.env.*.local
+
+# Generated media (audio, exports, temp files) - keep folder placeholders
+uploads/voiceovers/*
+uploads/exports/*
+uploads/tmp/*
+uploads/avatars/*
+!uploads/voiceovers/.gitkeep
+!uploads/exports/.gitkeep
+!uploads/tmp/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

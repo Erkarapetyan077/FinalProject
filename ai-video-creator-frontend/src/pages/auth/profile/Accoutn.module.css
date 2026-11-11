@@ -1,0 +1,130 @@
+.eyebrow { font-size:9px;letter-spacing:1.8px;font-weight:700;color:#9b87af;margin:0 0 14px }
+.roundAvatar { width:88px;height:88px;flex-shrink:0;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#eae0f6;color:#8965bd;font-size:32px;font-weight:600;border:4px solid #fff;box-shadow:0 0 0 1px #e8dff0; }
+.roundAvatar img { width:100%;height:100%;object-fit:cover; }
+.identityCard { display:flex;align-items:center;gap:24px;padding:30px;background:linear-gradient(115deg,#fffefa,#f0e9f8);border:1px solid #e7e0ee;border-radius:18px;margin-bottom:25px; }
+.identityText { min-width:0; }
+.identityText .settingsLink { display:inline-flex;align-items:center;gap:12px;margin-top:12px;padding:9px 13px;border:1px solid #e4d6fa;border-radius:8px;background:#f3ecff;color:#7323e9;font-size:12px;font-weight:600;text-decoration:none;transition:background .2s,border-color .2s; }
+.identityText .settingsLink:hover { background:#e9dcff;border-color:#c9acef; }
+.identityText .settingsLink:focus-visible { outline:3px solid #b7a4eb;outline-offset:3px; }
+.identityText h2 { font-size:23px;font-weight:600;letter-spacing:-.6px;margin:0 0 8px; }
+.identityText p { font-size:12px;color:#94869f;margin:6px 0;overflow-wrap:anywhere; }
+.identityText .joined { font-size:10px;margin-top:13px;color:#a092ad; }
+.accountCard { padding:28px;border:1px solid #e8e2ed;border-radius:17px;background:#fffefa; }
+.accountCard h2 { font-size:16px;font-weight:600;margin:0; }
+@media(max-width:700px) {
+.identityCard { padding:23px 18px;gap:17px; }
+.roundAvatar { width:68px;height:68px;font-size:27px; }
+.identityText h2 { font-size:19px; }
+}
+.identityCard { border-radius:21px;padding:34px;background:radial-gradient(ellipse at top right,#e9dff6,transparent 65%),#fffefa;box-shadow:0 8px 30px #68518306; }
+.roundAvatar { width:104px;height:104px;border-width:5px;box-shadow:0 0 0 1px #e5d9f0,0 8px 20px #8764b715; }
+.identityText .eyebrow { font-size:8px;letter-spacing:1.8px;color:#a18bb5;margin-bottom:10px; }
+@media(max-width:700px) {
+.identityCard { padding:25px 20px; }
+.roundAvatar { width:76px;height:76px; }
+}
+.identityCard { background:#fff;border-color:#e8e6ef;border-radius:11px;box-shadow:none;padding:25px; }
+.accountCard { border-radius:11px; }
+.accountCard { padding:26px;background:#fff;border:1px solid #e8e6ef;box-shadow:0 4px 18px #44236b04; }
+.accountDescription { font-size:12px;line-height:1.6;color:#938a9f;margin:8px 0 23px; }
+.accountDetails { display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:0;padding-top:23px;border-top:1px solid #eeebf3; }
+.accountDetails>div { display:flex;align-items:center;gap:14px;min-width:0; }
+.accountDetails>div>div { min-width:0; }
+.detailIcon { display:grid;place-items:center;flex-shrink:0;width:42px;height:42px;border-radius:11px;background:#f2ebff;color:#8c53d6;font-size:22px; }
+.accountDetails dt { color:#9a90a5;font-size:11px;margin-bottom:7px; }
+.accountDetails dd { color:#483c55;font-size:13px;font-weight:500;line-height:1.6;margin:0;overflow-wrap:anywhere; }
+@media(max-width:700px) {
+.accountDetails { grid-template-columns:1fr;gap:23px; }
+.accountCard { padding:22px; }
+}
+.identityCard .accountCard { margin-left:auto;padding:0 0 0 28px;border:0;border-left:1px solid #eae5f0;border-radius:0;box-shadow:none;background:transparent;min-width:0; }
+.identityCard .accountDetails { grid-template-columns:1fr;gap:18px;border:0;padding:0; }
+.identityCard .detailIcon { width:33px;height:33px;font-size:18px;border-radius:9px; }
+.identityCard .accountDetails dt { font-size:10px;margin-bottom:3px; }
+.identityCard .accountDetails dd { font-size:12px; }
+@media(max-width:1050px) {
+.identityCard { flex-wrap:wrap; }
+.identityCard .accountCard { margin-left:0;width:100%;border-left:0;border-top:1px solid #eae5f0;padding:20px 0 0; }
+.identityCard .accountDetails { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:520px) {
+.identityCard .accountDetails { grid-template-columns:1fr; }
+}
+
+.identityCard {
+    display:grid;
+    grid-template-columns:104px minmax(0,1fr) minmax(200px,1fr);
+    gap:28px;
+    padding:30px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#fcfaff,#fff 55%);
+    box-shadow:0 8px 28px #44236b06;
+}
+.identityCard .accountCard { width:auto;margin:0; }
+.identityCard>ul {
+    grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:14px;
+    list-style:none;
+    margin:4px 0 0;
+    padding:24px 0 0;
+    border-top:1px solid #eae5f0;
+}
+.identityCard>ul:empty { display:none; }
+.refreshButton {
+    grid-column:1 / -1;
+    justify-self:end;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    padding:11px 17px;
+    border:1px solid #e4d6fa;
+    border-radius:9px;
+    background:#f3ecff;
+    color:#7323e9;
+    font-size:12px;
+    font-weight:600;
+    cursor:pointer;
+    transition:background .2s,border-color .2s;
+}
+.refreshButton>span { font-size:19px;line-height:1; }
+.refreshButton:hover { background:#e9dcff;border-color:#c9acef; }
+.refreshButton:active { background:#dfccfb; }
+.refreshButton:focus-visible { outline:3px solid #b7a4eb;outline-offset:3px; }
+@media(max-width:520px) { .refreshButton { justify-self:stretch; } }
+@media(prefers-reduced-motion:reduce) { .refreshButton { transition:none; } }
+.identityCard>ul>li {
+    position:relative;
+    min-width:0;
+    padding:20px 20px 20px 46px;
+    border:1px solid #e8e0f2;
+    border-radius:12px;
+    background:#fff;
+    color:#544561;
+    font-size:13px;
+    font-weight:500;
+    line-height:1.7;
+    overflow-wrap:anywhere;
+    box-shadow:0 3px 12px #44236b04;
+}
+.identityCard>ul>li::before {
+    content:'▶';
+    position:absolute;
+    left:18px;
+    top:23px;
+    color:#8c53d6;
+    font-size:12px;
+}
+@media(max-width:1050px) {
+    .identityCard { grid-template-columns:104px minmax(0,1fr); }
+    .identityCard .accountCard { grid-column:1 / -1;width:100%; }
+}
+@media(max-width:700px) {
+    .identityCard { grid-template-columns:76px minmax(0,1fr);gap:20px 16px;padding:22px 18px; }
+    .identityCard>ul { grid-template-columns:1fr;padding-top:20px; }
+}
+@media(max-width:380px) {
+    .identityCard { grid-template-columns:minmax(0,1fr); }
+}
